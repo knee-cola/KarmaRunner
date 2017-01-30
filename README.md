@@ -6,6 +6,9 @@ The main features are:
 - starting and stopping Karma from the drop-down menu
 - blocks the Esc button from closing the build results pannel (where the Karma outputs it's results)
 
+![KarmaRunner Screenshot](https://raw.githubusercontent.com/knee-cola/KarmaRunner/master/KarmaRunnerScreenshot.PNG)
+
+
 ##1. Prerequisites
 Before installing KarmaRunner make sure to install [SublimeANSI](https://github.com/aziz/SublimeANSI).
 
