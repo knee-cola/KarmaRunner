@@ -9,11 +9,13 @@ The main features are:
 ##1. Prerequisites
 Before installing KarmaRunner make sure to install [SublimeANSI](https://github.com/aziz/SublimeANSI).
 
+Also you need to install and configure the Karma test runner and make sure it works as expected.
+
 ##2. Installation
 
     npm install -g karmarunner
     
-##3. Additional settings
+##3. Build System Settings
 
 KarmaRunner needs a build system to be setup in the Sublime's project file.
 The default name for the build system is "Karma" (can be overriden in plugin settings file).
@@ -41,4 +43,5 @@ Here's an example:
 
 ##4. Using
 To run Karma simply choose **Tools > Karma > Run Karma** or press Ctrl+P and type "Run Karma"
+
 To stop Karma choose **Tools > Karma > Kill Karma** or press Ctrl+P and type "Kill Karma"
