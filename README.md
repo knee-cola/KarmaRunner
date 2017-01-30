@@ -13,7 +13,8 @@ Also you need to install and configure the [Karma test runner](https://www.npmjs
 
 ##2. Installation
 
-    npm install -g karmarunner
+	You can install via [Sublime Package Control](http://wbond.net/sublime_packages/package_control)
+	Or you can clone this repository into your SublimeText Packages directory
     
 ##3. Build System Settings
 
