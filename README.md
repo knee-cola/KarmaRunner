@@ -4,12 +4,12 @@ KarmaRunner provides a easy interface for running Karma directly from SublimeTex
 
 The main features are:
 - starting and stopping Karma from the drop-down menu
-- disables the Escape buttin closing the build results pannel (where the Karma outputs it's results)
+- blocks the Esc button from closing the build results pannel (where the Karma outputs it's results)
 
 ##1. Prerequisites
 Before installing KarmaRunner make sure to install [SublimeANSI](https://github.com/aziz/SublimeANSI).
 
-Also you need to install and configure the Karma test runner and make sure it works as expected.
+Also you need to install and configure the [Karma test runner](https://www.npmjs.com/package/karma) and make sure it works as expected.
 
 ##2. Installation
 
@@ -26,7 +26,7 @@ Here's an example:
     	[
 		    {
     			"name": "Karma",
-			"cmd":
+				"cmd":
 				[
 					"C:\\Program Files (x86)\\nodejs\\node.exe",
 					"node_modules/karma/bin/karma",
