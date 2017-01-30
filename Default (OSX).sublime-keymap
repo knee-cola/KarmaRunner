@@ -1,0 +1,16 @@
+[
+	// Prevent hidding of the build output when the "Esc" button is pressed.
+	// This is implemented by overriding the default key binding
+	// The override is applied only if karam is currently running
+	{ "keys": ["escape"], "command": "unbound", "args": {"cancel": true},
+		"context":
+		[
+			{ "key": "panel_visible", "operator": "equal", "operand": true }
+			// the following line disables this key binding in case
+			// Karma is not running. The "karma_running" settings flag
+			// is set by the plugin once the Karma is started.
+			// It is reset to FALSE when the Karma is stopped (also from the plugin)
+			,{ "key": "setting.karma_running", "operator": "equal", "operand": true }
+		]
+	}
+]

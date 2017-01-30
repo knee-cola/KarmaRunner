@@ -1,0 +1,5 @@
+{
+	// The name of Karma build system - the one stated in the sublime-project file
+	// The default value is "Karma"
+	"build_system_name": "Karma"
+}
