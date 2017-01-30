@@ -38,3 +38,7 @@ Here's an example:
 			}
 		],
 	}
+
+##4. Using
+To run Karma simply choose **Tools > Karma > Run Karma** or press Ctrl+P and type "Run Karma"
+To stop Karma choose **Tools > Karma > Kill Karma** or press Ctrl+P and type "Kill Karma"
