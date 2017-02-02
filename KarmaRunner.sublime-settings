@@ -1,5 +1,9 @@
 {
 	// The name of Karma build system - the one stated in the sublime-project file
 	// The default value is "Karma"
-	"build_system_name": "Karma"
+	"build_system_name": "Karma",
+	// Whenever a source file is saved the Karma output panel is displayed
+	// Here you can specify one file type for which show action should be triggered
+	// i.e. ".js", ".ts"
+	"show_karma_for_file_type": "js"
 }

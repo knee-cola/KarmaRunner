@@ -1,4 +1,5 @@
 [
-    { "caption": "KarmaRunner: Run Karma", "command": "run_karma" },
-    { "caption": "KarmaRunner: Kill Karma", "command": "kill_karma" }
+    { "caption": "KarmaRunner: Run Karma", "command": "run_karma" }
+    ,{ "caption": "KarmaRunner: Kill Karma", "command": "kill_karma" }
+    ,{ "caption": "KarmaRunner: Make Panel", "command": "make_karma_panel" }
 ]
