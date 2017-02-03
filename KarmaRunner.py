@@ -31,6 +31,7 @@ class run_karmaCommand(sublime_plugin.WindowCommand):
 
 	# event hander for settings change
 	def reload_settings(self, settings):
+		global _showKarmaForFileType
 		_showKarmaForFileType = "." + settings.get("show_karma_for_file_type")
 
 class kill_karmaCommand(sublime_plugin.WindowCommand):
