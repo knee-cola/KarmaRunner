@@ -26,12 +26,11 @@ class run_karmaCommand(sublime_plugin.WindowCommand):
 			build_system_name = settings.get("build_system_name")
 
 			# run the build task defined in the sublime-project file
-			self.window.run_command("build", args={"name": build_system_name})
+			self.window.run_command("build", args={"build_system": build_system_name})
 			_KarmaIsRunning = True
 
 	# event hander for settings change
 	def reload_settings(self, settings):
-		global _showKarmaForFileType
 		_showKarmaForFileType = "." + settings.get("show_karma_for_file_type")
 
 class kill_karmaCommand(sublime_plugin.WindowCommand):
