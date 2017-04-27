@@ -13,12 +13,13 @@ class run_karmaCommand(sublime_plugin.WindowCommand):
 		global _KarmaIsRunning
 		global _showKarmaForFileType
 
-		# run karma only iof it's not currently running
+		# run karma only if it's not currently running
 		if _KarmaIsRunning==False:
 
 			settings = sublime.load_settings("KarmaRunner.sublime-settings")
 			
 			_showKarmaForFileType = "." + settings.get("show_karma_for_file_type")
+
 			# listen for settings change
 			settings.add_on_change("show_karma_for_file_type", lambda: self.reload_settings(settings))
 
@@ -26,7 +27,11 @@ class run_karmaCommand(sublime_plugin.WindowCommand):
 			build_system_name = settings.get("build_system_name")
 
 			# run the build task defined in the sublime-project file
-			self.window.run_command("build", args={"build_system": build_system_name})
+#DEBUG			self.window.status_message("build_system_name="+build_system_name)
+
+			self.window.run_command("set_build_system", args={"file": build_system_name})
+			self.window.run_command("build")
+
 			_KarmaIsRunning = True
 
 	# event hander for settings change
