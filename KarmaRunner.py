@@ -63,7 +63,13 @@ class karmaRunner_OnPostSave(sublime_plugin.EventListener):
 
 		# show panel only if Karma is currently running
 		if _KarmaIsRunning:
-			print(_showKarmaForFileType)
+			# print(_showKarmaForFileType)
 			# show panel only if the file type is JavaScript
 			if view.file_name()[-3:]==_showKarmaForFileType:
 				view.window().run_command("show_panel", args={"panel": "output.exec"})
+
+				# scroll to EOF, so that the lastest test results are visible
+				#   http://www.sublimetext.com/docs/3/commands.html
+				#   https://www.sublimetext.com/docs/3/api_reference.html#sublime.Window
+				build_results_panel = view.window().find_output_panel("exec")
+				build_results_panel.run_command("scroll_to_eof")
